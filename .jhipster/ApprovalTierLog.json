@@ -1,0 +1,75 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091252",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "approval_tier_log",
+    "fields": [
+        {
+            "fieldName": "relatedId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "relatedFileType",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "1",
+            "fieldValidateRulesMinlength": "0"
+        },
+        {
+            "fieldName": "auditDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "approvalPersonnelId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "approvalStatus",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "50",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "approvalTierName",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "operationDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "ApprovalTierLog",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "auditInfo",
+            "otherEntityRelationshipName": "approvalTierLog",
+            "relationshipName": "auditInfo",
+            "relationshipType": "many-to-one"
+        },
+        {
+            "otherEntityName": "tierAuthorization",
+            "otherEntityRelationshipName": "approvalTierLog",
+            "relationshipName": "tierAuthorization",
+            "relationshipType": "many-to-one"
+        },
+        {
+            "otherEntityName": "approvalTier",
+            "otherEntityRelationshipName": "approvalTierLog",
+            "relationshipName": "approvalTier",
+            "relationshipType": "many-to-one"
+        }
+    ],
+    "service": "serviceImpl"
+}

@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "FiratManagementSystemApi": {
+      "path": "FiratManagementSystemApi.abpmdl.json"
+    }
+  }
+}

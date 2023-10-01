@@ -1,0 +1,50 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091251",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "tier_authorization",
+    "fields": [
+        {
+            "fieldName": "personnelId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "personnelName",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "emailInfo",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "TierAuthorization",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "approvalTierLog",
+            "otherEntityRelationshipName": "tierAuthorization",
+            "relationshipName": "approvalTierLog",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "approvalTier",
+            "otherEntityRelationshipName": "tierAuthorization",
+            "relationshipName": "approvalTier",
+            "relationshipType": "many-to-one"
+        }
+    ],
+    "service": "serviceImpl"
+}

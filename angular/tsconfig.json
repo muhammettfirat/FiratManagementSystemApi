@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@firat-management-system-api": [
+        "projects/firat-management-system-api/src/public-api.ts"
+      ],
+      "@firat-management-system-api/config": [
+        "projects/firat-management-system-api/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/firat-management-system-api/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/firat-management-system-api/src/lib/proxy/*"]
+    }
+  }
+}

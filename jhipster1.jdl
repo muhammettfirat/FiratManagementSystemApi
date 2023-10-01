@@ -1,0 +1,63 @@
+entity Attachment{
+   DocumentId  UUID
+   FileType  String
+   FileName  String
+   FileSize  Long
+   File  Boolean
+}
+
+entity Authorization {
+ 
+   GroupID  UUID
+   UserID  UUID
+   AuditPersonnel03 UUID
+   Role  String minlength(1) maxlength(100)
+   DataType  Boolean
+  
+}
+entity Document{
+   ResourceNameDocument  String
+   TableName   String
+   IncompleteDocument   String
+   ReferansID  UUID
+}
+
+entity Group{
+   Code  String 
+   Name  String 
+   ParentId  UUID
+}
+
+entity ExtraDataInfo {
+   Kaynak  Boolean
+   Tanim   Boolean 
+   VeriTipi   String
+   ParamCode String
+}
+entity ExtraData {
+DocumentId  UUID
+   Value  String minlength(1) maxlength(100)
+        RelationId UUID
+      ExtraDataInfoId UUID
+}
+entity MetaData{
+   DocumentId UUID
+   AttachmentID UUID
+   GroupID UUID   
+   MetaDataType String
+   Description String
+   DocumentDate Date
+   DocumentValdtyDate Date
+   ValidityDateWarningDay Integer
+   RevisionNumber String
+   RevisionDate Date
+}
+entity MasterData{
+   Description String
+   MissingFile Boolean
+   RelationId UUID
+}
+paginate all with pagination
+filter *
+dto * with mapstruct
+service all with serviceImpl

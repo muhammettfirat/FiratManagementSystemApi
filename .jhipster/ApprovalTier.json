@@ -1,0 +1,60 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091250",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "approval_tier",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "Integer",
+            "fieldValidateRules": ["required"]
+        },
+        {
+            "fieldName": "definition",
+            "fieldType": "String",
+            "fieldValidateRules": ["required", "minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "finalTiers",
+            "fieldType": "Boolean"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "ApprovalTier",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "companyInfo",
+            "otherEntityRelationshipName": "approvalTier",
+            "relationshipName": "companyInfo",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "tierAuthorization",
+            "otherEntityRelationshipName": "approvalTier",
+            "relationshipName": "tierAuthorization",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "approvalTierLog",
+            "otherEntityRelationshipName": "approvalTier",
+            "relationshipName": "approvalTierLog",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "stockInfo",
+            "otherEntityRelationshipName": "approvalTier",
+            "relationshipName": "stockInfo",
+            "relationshipType": "one-to-many"
+        }
+    ],
+    "service": "serviceImpl"
+}

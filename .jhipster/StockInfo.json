@@ -1,0 +1,103 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091253",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "stock_info",
+    "fields": [
+        {
+            "fieldName": "relatedTierID",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "relatedFile",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "5",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "manufacturingLocationAddress",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "manufacturersAddress",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "evaluationDescription",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "evaluationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "auditEvaluationResult",
+            "fieldType": "Integer",
+            "fieldValidateRules": ["min", "max"],
+            "fieldValidateRulesMax": "1",
+            "fieldValidateRulesMin": "0"
+        },
+        {
+            "fieldName": "auditResultMissing",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "expectedDocument",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "250",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "decisionTaken",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "approvalStatus",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "50",
+            "fieldValidateRulesMinlength": "1"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "StockInfo",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "group",
+            "otherEntityRelationshipName": "stockInfo",
+            "relationshipName": "group",
+            "relationshipType": "many-to-one"
+        },
+        {
+            "otherEntityName": "approvalTier",
+            "otherEntityRelationshipName": "stockInfo",
+            "relationshipName": "approvalTier",
+            "relationshipType": "many-to-one"
+        }
+    ],
+    "service": "serviceImpl"
+}

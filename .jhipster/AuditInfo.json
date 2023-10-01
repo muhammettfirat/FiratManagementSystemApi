@@ -1,0 +1,119 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091247",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "audit_info",
+    "fields": [
+        {
+            "fieldName": "auditDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "auditPersonnel01",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "auditPersonnel02",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "auditPersonnel03",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "auditPersonnel04",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "companyPersonnel01",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "companyPersonnel02",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "companyPersonnel03",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "companyPersonnel04",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "100",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "decisionTaken",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "auditResultMissing",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "auditEvaluationResult",
+            "fieldType": "Integer",
+            "fieldValidateRules": ["min", "max"],
+            "fieldValidateRulesMax": "1",
+            "fieldValidateRulesMin": "0"
+        },
+        {
+            "fieldName": "expectedDocument",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "250",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "score",
+            "fieldType": "Integer"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "AuditInfo",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "approvalTierLog",
+            "otherEntityRelationshipName": "auditInfo",
+            "relationshipName": "approvalTierLog",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "companyInfo",
+            "otherEntityRelationshipName": "auditInfo",
+            "relationshipName": "companyInfo",
+            "relationshipType": "many-to-one"
+        }
+    ],
+    "service": "serviceImpl"
+}

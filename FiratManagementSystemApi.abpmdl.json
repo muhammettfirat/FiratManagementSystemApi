@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "FiratManagementSystemApi.Domain.Shared": {
+      "path": "src/FiratManagementSystemApi.Domain.Shared/FiratManagementSystemApi.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.Domain": {
+      "path": "src/FiratManagementSystemApi.Domain/FiratManagementSystemApi.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.Application.Contracts": {
+      "path": "src/FiratManagementSystemApi.Application.Contracts/FiratManagementSystemApi.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.Application": {
+      "path": "src/FiratManagementSystemApi.Application/FiratManagementSystemApi.Application.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.EntityFrameworkCore": {
+      "path": "src/FiratManagementSystemApi.EntityFrameworkCore/FiratManagementSystemApi.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.MongoDB": {
+      "path": "src/FiratManagementSystemApi.MongoDB/FiratManagementSystemApi.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.HttpApi": {
+      "path": "src/FiratManagementSystemApi.HttpApi/FiratManagementSystemApi.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.HttpApi.Client": {
+      "path": "src/FiratManagementSystemApi.HttpApi.Client/FiratManagementSystemApi.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.TestBase": {
+      "path": "test/FiratManagementSystemApi.TestBase/FiratManagementSystemApi.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "FiratManagementSystemApi.EntityFrameworkCore.Tests": {
+      "path": "test/FiratManagementSystemApi.EntityFrameworkCore.Tests/FiratManagementSystemApi.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "FiratManagementSystemApi.MongoDB.Tests": {
+      "path": "test/FiratManagementSystemApi.MongoDB.Tests/FiratManagementSystemApi.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "FiratManagementSystemApi.Domain.Tests": {
+      "path": "test/FiratManagementSystemApi.Domain.Tests/FiratManagementSystemApi.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "FiratManagementSystemApi.Application.Tests": {
+      "path": "test/FiratManagementSystemApi.Application.Tests/FiratManagementSystemApi.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "FiratManagementSystemApi.HttpApi.Host": {
+      "path": "host/FiratManagementSystemApi.HttpApi.Host/FiratManagementSystemApi.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "FiratManagementSystemApi.Web": {
+      "path": "src/FiratManagementSystemApi.Web/FiratManagementSystemApi.Web.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/FiratManagementSystemApi.HttpApi.Client.ConsoleTestApp/FiratManagementSystemApi.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "FiratManagementSystemApi.Web.Host": {
+      "path": "host/FiratManagementSystemApi.Web.Host/FiratManagementSystemApi.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "FiratManagementSystemApi.AuthServer": {
+      "path": "host/FiratManagementSystemApi.AuthServer/FiratManagementSystemApi.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "FiratManagementSystemApi.Host.Shared": {
+      "path": "host/FiratManagementSystemApi.Host.Shared/FiratManagementSystemApi.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "FiratManagementSystemApi.Web.Unified": {
+      "path": "host/FiratManagementSystemApi.Web.Unified/FiratManagementSystemApi.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "FiratManagementSystemApi.Blazor": {
+      "path": "src/FiratManagementSystemApi.Blazor/FiratManagementSystemApi.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.Blazor.Host": {
+      "path": "host/FiratManagementSystemApi.Blazor.Host/FiratManagementSystemApi.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "FiratManagementSystemApi.Blazor.Server": {
+      "path": "src/FiratManagementSystemApi.Blazor.Server/FiratManagementSystemApi.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.Blazor.WebAssembly": {
+      "path": "src/FiratManagementSystemApi.Blazor.WebAssembly/FiratManagementSystemApi.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "FiratManagementSystemApi.Blazor.Server.Host": {
+      "path": "host/FiratManagementSystemApi.Blazor.Server.Host/FiratManagementSystemApi.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

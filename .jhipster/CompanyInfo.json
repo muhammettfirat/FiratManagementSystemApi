@@ -1,0 +1,61 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091246",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "company_info",
+    "fields": [
+        {
+            "fieldName": "customerType",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "customerCode",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "startedWorkingDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "auditPeriodMonth",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "approvalStatus",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "50",
+            "fieldValidateRulesMinlength": "1"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "CompanyInfo",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "auditInfo",
+            "otherEntityRelationshipName": "companyInfo",
+            "relationshipName": "auditInfo",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "group",
+            "otherEntityRelationshipName": "companyInfo",
+            "relationshipName": "group",
+            "relationshipType": "many-to-one"
+        },
+        {
+            "otherEntityName": "approvalTier",
+            "otherEntityRelationshipName": "companyInfo",
+            "relationshipName": "approvalTier",
+            "relationshipType": "many-to-one"
+        }
+    ],
+    "service": "serviceImpl"
+}

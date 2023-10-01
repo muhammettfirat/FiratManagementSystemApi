@@ -1,0 +1,31 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091249",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "document_type",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": ["required"]
+        },
+        {
+            "fieldName": "definition",
+            "fieldType": "String",
+            "fieldValidateRules": ["required", "minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "DocumentType",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [],
+    "service": "serviceImpl"
+}

@@ -1,0 +1,46 @@
+{
+    "applications": "*",
+    "changelogDate": "20231001091248",
+    "clientRootFolder": "FiratManagementSystemApi",
+    "databaseType": "postgres",
+    "dto": "mapstruct",
+    "embedded": false,
+    "entityTableName": "jhi_group",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "250",
+            "fieldValidateRulesMinlength": "1"
+        },
+        {
+            "fieldName": "definition",
+            "fieldType": "String",
+            "fieldValidateRules": ["minlength", "maxlength"],
+            "fieldValidateRulesMaxlength": "500",
+            "fieldValidateRulesMinlength": "1"
+        }
+    ],
+    "fluentMethods": true,
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "FiratManagementSystemApi",
+    "name": "Group",
+    "pagination": "no",
+    "readOnly": false,
+    "relationships": [
+        {
+            "otherEntityName": "companyInfo",
+            "otherEntityRelationshipName": "group",
+            "relationshipName": "companyInfo",
+            "relationshipType": "one-to-many"
+        },
+        {
+            "otherEntityName": "stockInfo",
+            "otherEntityRelationshipName": "group",
+            "relationshipName": "stockInfo",
+            "relationshipType": "one-to-many"
+        }
+    ],
+    "service": "serviceImpl"
+}

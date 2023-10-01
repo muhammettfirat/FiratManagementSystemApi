@@ -1,0 +1,63 @@
+{
+    "generator-jhipster": {
+        "applicationType": "microservice",
+        "authenticationType": "oauth2",
+        "baseName": "FiratManagementSystemApi",
+        "blueprints": [
+            {
+                "name": "generator-jhipster-dotnetcore",
+                "version": "3.9.0"
+            }
+        ],
+        "buildTool": "maven",
+        "cacheProvider": "ehcache",
+        "cqrsEnabled": false,
+        "creationTimestamp": 1670938683162,
+        "databaseType": "postgres",
+        "devDatabaseType": "h2Disk",
+        "dtoSuffix": "DTO",
+        "enableGradleEnterprise": false,
+        "enableHibernateCache": true,
+        "enableTranslation": false,
+        "entities": [
+            "CompanyInfo",
+            "AuditInfo",
+            "Group",
+            "DocumentType",
+            "ApprovalTier",
+            "TierAuthorization",
+            "ApprovalTierLog",
+            "StockInfo"
+        ],
+        "entitySuffix": "",
+        "jhiPrefix": "jhi",
+        "jhipsterVersion": "7.8.1",
+        "languages": ["en", "fr"],
+        "lastLiquibaseTimestamp": 1696151573000,
+        "namespace": "FiratManagementSystemApi",
+        "nativeLanguage": "tr",
+        "otherModules": [
+            {
+                "name": "generator-jhipster-dotnetcore",
+                "version": "3.9.0"
+            }
+        ],
+        "packageName": "com.mycompany.myapp",
+        "pages": [],
+        "prodDatabaseType": "mysql",
+        "reactive": false,
+        "searchEngine": false,
+        "serverPort": "5004",
+        "serviceDiscoveryType": "consul",
+        "skipCheckLengthOfIdentifier": false,
+        "skipClient": true,
+        "skipFakeData": false,
+        "skipUserManagement": true,
+        "testFrameworks": [],
+        "websocket": false,
+        "withAdminUi": false
+    },
+    "generator-jhipster-dotnetcore": {
+        "ciType": "Gitlab"
+    }
+}
